@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&family=PT+Serif&display=swap');
+
+$font1: 'Charis SIL', serif;
+$font2: 'PT Serif', serif;
+
+$color1:#ff5e00 ;
+$color2:#dc143c ;
+$color3:#fff7e7;
+$color4: #383838 ;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $color3;
+}
+// inicio header
+nav{
+    font-family: $font2;
+    background-image: linear-gradient(to bottom, #ff5e00, #ffbc4f, #ffd182, #ffe5b4, #fff7e7);
+    i{
+        font-size: 30px;
+        color: $color3;
+    }
+    li{
+        padding-right: 90px;
+        a{
+            font-size: 25px;
+            color: $color3;
+            text-shadow: 0 0 15px #000000 ;
+            &:hover{
+                color: $color1;
+            }
+        }
+    }
+}
+h1{
+    font-family: $font1;
+    font-size: 80px;
+    background-color: $color3;
+    span{
+        color: $color2;
+        animation: 2s anima ;
+    }
+}
+// fin header
+
+// inicio main
+main{
+    font-family: $font2;
+    background-color: $color3;
+    // inicio article noticiasHoy
+    .noticiasHoy{
+        background-color: $color4;
+        height: 60vw;
+        margin-top: 30px;
+        img{
+            height: 30vw;
+            width: 100%;
+        }
+        a{
+            font-size: 2.5vw;
+            color: $color3;
+            &:hover{
+                text-decoration: none;
+                color: $color1;
+            }
+        }
+        .logo{
+            position: absolute;
+            top: 10px;
+            background-color: $color1;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 3vw;
+            width: 10vw;
+        }
+        .fa-facebook-square{
+            position: absolute;
+            top: 10px;
+            right: 110px;
+            font-size: 5vw;
+            color: $color1;
+        }
+        .fa-twitter-square{
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            font-size: 5vw;
+            color: $color1;
+        }
+    }
+    // fin article noticiasHoy
+
+    // inicio article noticiasMundo
+    .noticiasMundo{
+        @extend .noticiasHoy;
+        .logo{
+            width: 17vw;
+        }
+        .fa-facebook-square{
+            right: 40px;
+        }
+        .fa-twitter-square{
+            right: 110px;
+        }
+    }
+    // fin article noticiasMundo
+
+    // inicio article noticiasClima
+    .noticiasClima{
+        @extend .noticiasHoy;
+        height: 50vw;
+        .logo{
+            width: 15vw;
+        }
+        .fa-facebook-square{
+            right: 40px;
+        }
+        .fa-twitter-square{
+            right: 110px;
+        }
+    }
+    // fin article noticiasClima
+
+    // inicio section ranking
+    .ranking{
+        background-color: $color1;
+        box-shadow: 2px 2px 6px black;
+        h3{
+            text-transform: capitalize;
+            color: $color3;
+        }
+        article{
+            padding: 5px 0 10px 0;
+            // border: solid;
+            h4{
+                font-size: 25px;
+                color: $color4;
+                text-transform: uppercase;
+            }
+            h5{
+                @extend h4;
+            }
+            h6{
+                @extend h4;
+            }
+            a{
+                font-size: 20px;
+                color: $color4;
+            }
+        }
+    }
+    // fin section ranking
+}
+// fin main
+
+// inicio footer
+footer{
+    background-image: linear-gradient(to top, #ff5e00, #ffbc4f, #ffd182, #ffe5b4, #fff7e7);
+    font-family: $font2;
+    font-size: 4vw;
+    i{
+        letter-spacing: 20px;
+    }
+}
+// fin footer
+
+@keyframes anima {
+    from{
+        font-size: 10px;
+    }
+    to{
+        font-size: 80px;
+    }
+}

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&family=PT+Serif&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff7e7;
+}
+
+nav {
+  font-family: "PT Serif", serif;
+  background-image: linear-gradient(to bottom, #ff5e00, #ffbc4f, #ffd182, #ffe5b4, #fff7e7);
+}
+nav i {
+  font-size: 30px;
+  color: #fff7e7;
+}
+nav li {
+  padding-right: 90px;
+}
+nav li a {
+  font-size: 25px;
+  color: #fff7e7;
+  text-shadow: 0 0 15px #000000;
+}
+nav li a:hover {
+  color: #ff5e00;
+}
+
+h1 {
+  font-family: "Charis SIL", serif;
+  font-size: 80px;
+  background-color: #fff7e7;
+}
+h1 span {
+  color: #dc143c;
+  animation: 2s anima;
+}
+
+main {
+  font-family: "PT Serif", serif;
+  background-color: #fff7e7;
+}
+main .noticiasHoy, main .noticiasClima, main .noticiasMundo {
+  background-color: #383838;
+  height: 60vw;
+  margin-top: 30px;
+}
+main .noticiasHoy img, main .noticiasClima img, main .noticiasMundo img {
+  height: 30vw;
+  width: 100%;
+}
+main .noticiasHoy a, main .noticiasClima a, main .noticiasMundo a {
+  font-size: 2.5vw;
+  color: #fff7e7;
+}
+main .noticiasHoy a:hover, main .noticiasClima a:hover, main .noticiasMundo a:hover {
+  text-decoration: none;
+  color: #ff5e00;
+}
+main .noticiasHoy .logo, main .noticiasClima .logo, main .noticiasMundo .logo {
+  position: absolute;
+  top: 10px;
+  background-color: #ff5e00;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3vw;
+  width: 10vw;
+}
+main .noticiasHoy .fa-facebook-square, main .noticiasClima .fa-facebook-square, main .noticiasMundo .fa-facebook-square {
+  position: absolute;
+  top: 10px;
+  right: 110px;
+  font-size: 5vw;
+  color: #ff5e00;
+}
+main .noticiasHoy .fa-twitter-square, main .noticiasClima .fa-twitter-square, main .noticiasMundo .fa-twitter-square {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 5vw;
+  color: #ff5e00;
+}
+main .noticiasMundo .logo {
+  width: 17vw;
+}
+main .noticiasMundo .fa-facebook-square {
+  right: 40px;
+}
+main .noticiasMundo .fa-twitter-square {
+  right: 110px;
+}
+main .noticiasClima {
+  height: 50vw;
+}
+main .noticiasClima .logo {
+  width: 15vw;
+}
+main .noticiasClima .fa-facebook-square {
+  right: 40px;
+}
+main .noticiasClima .fa-twitter-square {
+  right: 110px;
+}
+main .ranking {
+  background-color: #ff5e00;
+  box-shadow: 2px 2px 6px black;
+}
+main .ranking h3 {
+  text-transform: capitalize;
+  color: #fff7e7;
+}
+main .ranking article {
+  padding: 5px 0 10px 0;
+}
+main .ranking article h4, main .ranking article h6, main .ranking article h5 {
+  font-size: 25px;
+  color: #383838;
+  text-transform: uppercase;
+}
+main .ranking article a {
+  font-size: 20px;
+  color: #383838;
+}
+
+footer {
+  background-image: linear-gradient(to top, #ff5e00, #ffbc4f, #ffd182, #ffe5b4, #fff7e7);
+  font-family: "PT Serif", serif;
+  font-size: 4vw;
+}
+footer i {
+  letter-spacing: 20px;
+}
+
+@keyframes anima {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
